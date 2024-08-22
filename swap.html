@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function swap2()
+        {
+            var a,b;
+            a=document.getElementById('a1').value;
+            b=document.getElementById('a2').value;
+            a=parseInt(a); b=parseInt(b);
+            a=a+b;
+            b=a-b;
+            a=a-b;
+            document.writeln("<br>After Swap A= "+a+", B= "+b);
+        }
+    </script>
+</head>
+<body>
+    <center><table border="0"><form onsubmit="swap2()">
+        <tr><td>Enter the value of A:</td>
+        <td><input type="text" id="a1"></td></tr>
+        <tr><td>Enter the value of B:</td>
+            <td><input type="text" id="a2"></td></tr>
+            <tr><td><input type="submit" value="Swap"></td></tr>
+        </form>
+    </center>
+    </table>
+</body>
+</html>

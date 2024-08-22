@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function student()
+        {
+            var a,b;
+            a=document.getElementById('a1').value;
+            b=document.getElementById('a2').value;
+            document.writeln("Rollno"+a+"Name="+b);
+        }
+    </script>
+</head>
+
+
+
+<body>
+<form  onsubmit="student()"> 
+     <center ><h1><u>Student Form</u></h1></center>
+<label><h2>Rollno:</h2></label>
+<input type="text" id="a1"><br>
+<label><h2>Name</h2></label>
+<input type="text" id="a2"><br>
+<center><input type="submit" value="submit"></center>
+</form>
+</body>
+</html>
